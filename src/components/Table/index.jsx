@@ -47,6 +47,7 @@ class Table extends Component {
 		   return(
 					<div className="challenge-table">
 						<h1>{this.state.data.challenge_name}</h1>
+						<h4>Id: {this.props.challenge_id}</h4>
 						<table className='table table-bordered table-striped challenge-table'>
 							<thead>
 								<tr>

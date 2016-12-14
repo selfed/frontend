@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import $ from "jquery";
 import logo from './logo.svg';
 import './App.css';
+import { Link } from 'react-router'
 
 import LoginControl from '../LoginControl'
 import Clock from '../Clock'
@@ -14,8 +15,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-		 <Table promise={$.getJSON('https://jsonblob.com/api/7c6117f1-c1e8-11e6-871b-6dc71c24a5fa')}/>
-		 <a href="https://jsonblob.com/7c6117f1-c1e8-11e6-871b-6dc71c24a5fa">JSON</a>x
+      		<Link promise={$.getJSON('https://api.myjson.com/bins/9al29')} to="/challenges">Index Challenger</Link>
+      		<br/>
+      		<Link to="/challenges/1">Show Challenger</Link>
       </div>
     );
   }
