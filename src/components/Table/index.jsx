@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TableRow from '../TableRow/TableRow';
+import TableRow from '../TableRow';
 import moment from 'moment';
 
 

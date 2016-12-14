@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Cell from '../Cell/Cell';
+import Cell from '../Cell';
+import EditableLabel from '../EditableLabel'
 
 class TableRow extends Component 
 {
@@ -20,7 +21,7 @@ class TableRow extends Component
 		return (
 				<tr>
 					<td className='col-xs-3'>
-						{this.state.name}
+						<EditableLabel value={this.state.name} />
 					</td>
 					{cells}
 				</tr>
