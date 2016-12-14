@@ -2,7 +2,7 @@
   "name": "SelfED.com",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://selfed.github.io/release",
+  "homepage": "http://selfed.github.io/frontend",
   "devDependencies": {
     "react-scripts": "0.8.3"
   },
