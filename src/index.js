@@ -9,9 +9,10 @@ import './index.css';
 render(
 	(
 	  <Router history={hashHistory}>
-	    <Route path="/" component={App}/>
-	    <Route path="/challenges/:challengeId" component={ChallengeShowPage}/>
-	    <Route path="/challenges" component={ChallengeIndexPage}/>
+	    <Route path="/" component={App}>
+	   		 <Route path="challenges" component={ChallengeIndexPage}/>
+	   		 <Route path="/challenges/:challengeId" component={ChallengeShowPage}/>
+	    </Route>
 	  </Router>
 	)
   ,

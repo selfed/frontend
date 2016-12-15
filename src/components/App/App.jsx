@@ -8,17 +8,23 @@ import LoginControl from '../LoginControl'
 import Clock from '../Clock'
 import Table from '../Table'
 import EditableLabel from '../EditableLabel'
+import NavBar from '../NavBar'
 
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      		<Link promise={$.getJSON('https://api.myjson.com/bins/9al29')} to="/challenges">Index Challenger</Link>
-      		<br/>
-      		<Link to="/challenges/1">Show Challenger</Link>
-      </div>
+    <div className="container-fluid">
+		<div className="row">
+		 	<NavBar />
+			<div className="col-sm-9 col-lg-10">
+		      <div className="App">
+		      		{this.props.children}
+		      </div>
+      		</div>
+		</div>
+	</div>
     );
   }
 }
